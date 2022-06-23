@@ -58,6 +58,27 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
 }
 
+.rs {
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 400px;
+    background-color: #fff;
+    flex-direction: column;
+    height: 150px;
+    width: 80px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: -7px 0px 28px 0px rgba(0,0,0,0.36);
+    z-index: 1000;
+}
+
+.rs a {
+    color: #0071cd;
+}
+
 /*?---------------------------------------ACCUEIL---------------------------------------*/
 /*Initialisation Titre*/
 .title h2 {
