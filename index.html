@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/png" href="img/lapin.png">
+    <title>CONSTANCE & LOUIS - Votre magasin de vêtements pour enfants</title>
+</head>
+<body>
+    <div class="container-acc ">
+
+
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <a href="" class="logo"><img src="/img/lapin.png"></a>
+            <div class="nav-links ">
+                <ul>
+                    <img src="/img/lapin.png" alt="">
+                    <li><a href="" id="actif">Accueil</a></li>
+                    <li><a href="/pages/magasin.html">Magasin</a></li>
+                    <li><a href="/pages/marques.html">Nos marques</a></li>
+                    <li><a href="/pages/engagement.html">Seconde main</a></li>
+                    <li><a href="/pages/naissance.html" class="gras">Liste de naissance</a></li>
+                </ul>
+            </div>
+            <p class="revend1">Revendeur Officiel</p>
+            <p class="revend2">Revendeur Officiel Petit Bateau</p>
+            <a href="https://www.petit-bateau.fr" target="_blank"><img src="img/petit-bateau.png" class="p-bateau"></a>
+            <div class="menu-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path color="#BD9785" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+        </nav>
+
+        <!-- Page d'acceuil-->
+        <div class="title">
+            <p><h2>Constance et Louis</h2></p>
+            <div class="presentation">
+                <p><h4>Constance et Louis est un magasin indépendant familial et multimarques. Basé à Cambrai, il vous propose des vêtements et accessoires pour les petits et les grands jusqu'à 10 ans!</h4></p>
+                    <a href="pages/magasin.html" class="btn-acc-a"><button class="btn-acc">Voir le magasin</button></a>
+                <img src="img/photo1.png" class="p-magasin">
+                <img src="img/photo2.png" class="p-magasin-banner">
+            </div>
+        </div>
+
+        <!-- Galerie -->
+        <div class="galerie">
+            <div class="text-gal">
+                <h2>Galerie</h2>
+            </div>
+            <div class="grid-gal">
+                    <div class="grille">
+                        <div class="grid-item"><img src="img/gal1.jpg"></div>
+                        <div class="grid-item"><img src="img/gal2.jpg"></div>
+                        <div class="grid-item"><img src="img/gal3.jpg"></div>
+                        <div class="grid-item"><img src="img/gal4.jpg"></div>
+                        
+                        <div class="grid-item"><img src="img/gal5.jpg"></div>
+                        <div class="grid-item"><img src="img/gal6.jpg"></div>
+                        <div class="grid-item"><img src="img/gal7.jpg"></div>
+                        <div class="grid-item"><img src="img/gal8.jpg"></div>
+
+                        <div class="grid-item"><img src="img/gal9.jpg"></div>
+                        <div class="grid-item"><img src="img/gal10.jpg"></div>
+                        <div class="grid-item"><img src="img/gal11.jpg"></div>
+                        <div class="grid-item"><img src="img/gal12.jpg"></div>
+
+                        <div class="grid-item"><img src="img/gal13.jpg"></div>
+                        <div class="grid-item"><img src="img/gal14.jpg"></div>
+                        <div class="grid-item"><img src="img/gal15.jpg"></div>
+                        <div class="grid-item"><img src="img/gal16.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <nav class="footerBar">
+                <ul class="foot__links">
+                    <li><a href="/pages/mentions_legales.html">Mentions légales</a></li>
+                    <li><a href="/pages/plan.html">Plan du site</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        const coprs = document.querySelector(".container-acc")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
