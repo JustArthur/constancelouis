@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" type="image/png" href="../img/lapin.png">
+    <title>CONSTANCE & LOUIS - Votre magasin de vêtements pour enfants</title>
+</head>
+<body>
+
+    <div class="container-con">
+        <!--Header-->
+        <nav class="navbar">
+            <a href="../index.html" class="logo"><img src="../img/lapin.png"></a>
+            <div class="nav-links ">
+                <ul>
+                    <img src="../img/lapin.png" alt="">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="magasin.html">Magasin</a></li>
+                    <li><a href="marques.html">Nos marques</a></li>
+                    <li><a href="engagement.html">Seconde main</a></li>
+                    <li><a href="naissance.html" class="gras">Liste de naissance</a></li>
+                </ul>
+            </div>
+            <p class="revend1">Revendeur Officiel</p>
+            <p class="revend2">Revendeur Officiel Petit Bateau</p>
+            <a href="https://www.petit-bateau.fr" target="_blank"><img src="../img/petit-bateau.png" class="p-bateau"></a>
+            <div class="menu-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path color="#BD9785" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+        </nav>
+
+        <!--Map-->
+        <div class="situer">
+            <p><h2>Nous situer</h2></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.3095534770446!2d3.231648715910105!3d50.17404831512308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2bb8dee6d1125%3A0xf4902d1708245280!2sConstance%20et%20Louis!5e0!3m2!1sfr!2sfr!4v1653399211766!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="1180px" height="540px"></iframe>
+        </div>
+
+        <!--Horraire + contact-->
+        <div class="horraire-contact">
+            <div class="horraire">
+                <p><h3>Horaires</h3></p>
+                <ul class="jour">
+                    <li>Du Mardi au Samedi</li>
+                    <li>10h-12h30 / 14h-18h45</li>
+                    </lI>
+                </ul>
+                </h4></p>
+            </div>
+            <div class="contact">
+                <p><h3 class="cont">Contact</h3></p>
+                <ul class="contact-info">
+                    <li><h3 class="tel">03 27 37 05 28</h3></li>
+                    <li><a class="face" href="https://www.facebook.com/constanceetlouis" target="_blank"><svg class="face" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>Facebook</a></li>
+                    <li><a class="insta" href="https://www.instagram.com/constance.et.louis/" target="_blank">
+                        <img src="../img/insta.svg" height="30" width="30">Instagram</a></li>
+                    <li class="mail"><a href="mailto: contact@constanceetlouis.fr">contact@constanceetlouis.fr</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <nav class="footerBar">
+                <ul class="foot__links">
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                    <li><a href="plan.html">Plan du site</a></li>
+                    <li><a id="actif" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+    const coprs = document.querySelector(".container-acc")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

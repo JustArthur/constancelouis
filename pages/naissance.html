@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" type="image/png" href="../img/lapin.png">
+    <title>CONSTANCE & LOUIS - Votre magasin de vêtements pour enfants</title>
+</head>
+<body>
+    <div class="container-nais">
+        <!--Header-->
+        <nav class="navbar">
+            <a href="../index.html" class="logo"><img src="../img/lapin.png"></a>
+            <div class="nav-links ">
+                <ul>
+                    <img src="../img/lapin.png" alt="">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="magasin.html">Magasin</a></li>
+                    <li><a href="marques.html">Nos marques</a></li>
+                    <li><a href="engagement.html">Seconde main</a></li>
+                    <li><a href="naissance.html"  id="actif" class="gras">Liste de naissance</a></li>
+                </ul>
+            </div>
+            <p class="revend1">Revendeur Officiel</p>
+            <p class="revend2">Revendeur Officiel Petit Bateau</p>
+            <a href="https://www.petit-bateau.fr" target="_blank"><img src="../img/petit-bateau.png" class="p-bateau"></a>
+            <div class="menu-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path color="#BD9785" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+        </nav>
+
+        <div class="error">
+            <p><h1>Entre les repas, les biberons, les nuits blanches et les couches...</h1><br>
+                Nous nous penchons sérieusement sur le projet de liste de naissance pour vous proposer au plus vite une solution vous permettant de gâter votre bébé à naître !<br><br>
+                <span>Infos à venir prochainement !</span></p>
+        </div>
+        
+        <!--Footer-->
+        <footer>
+            <nav class="footerBar">
+                <ul class="foot__links">
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                    <li><a href="plan.html">Plan du site</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+    const coprs = document.querySelector(".container-acc")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+/*Initialisation de la page*/
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+/*---------------------------------------HEADER---------------------------------------*/
+.navbar {
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 7px 9px 41px rgba(0, 0, 0, 0.13);
+    z-index: 1000;
+}
+
+.navbar ul, .navbar ul a {
+    list-style: none;
+    text-decoration: none;
+    color: #4E4E4E;
+    font-family: 'Alata', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navbar ul img {
+    display: none;
+    height: 200px;
+}
+
+.navbar ul a.gras {
+    color: #f088c8;
+    font-weight: 900;
+}
+
+.navbar .logo img {
+    height: 100px;
+    z-index: 10001;
+}
+
+.navbar a img.p-bateau {
+    width: 165px;
+    height: 93px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 30px 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav-links li a {
+    position: relative;
+    padding: 0 20px;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    width: 35px;
+}
+
+.mobile-menu {
+    margin-left: 0;
+}
+
+/*? Animation */
+.navbar .nav-links ul li a:after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    background-color: #BD9785;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar .nav-links ul li a:hover:after,
+.navbar .nav-links ul li a#actif:after {
+    width: 100%;
+}
+
+.navbar .nav-links ul li a.gras:after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    background-color: #f088c8;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar .nav-links ul li a.gras:hover:after {
+    width: 100%;
+}
+
+/*? NavBar Texte Petit Bateau */
+.revend1 {
+    position: absolute;
+    right: 160px;
+    top: 45px;
+    font-size: 20px;
+    color: #112351;
+    font-weight: 900;
+}
+
+.revend2 {
+    display: none;
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    text-align: center;
+    top: 30px;
+    font-size: 20px;
+    color: #112351;
+    font-weight: 900;
+}
+
+
+
+
+/*---------------------------------------FOOTER---------------------------------------*/
+/*Initialisation Footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: #BD9785;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 50px 3%;
+    width: 100%;
+    box-shadow: 7px 9px 41px rgba(0, 0, 0, 0.13);
+}
+
+
+footer li,  footer a {
+    font-family: 'Alata', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color : #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.foot__links {
+    list-style: none;
+}
+
+
+.foot__links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+
+.foot__links li a {
+    position: relative;
+    padding: 0 20px;
+}
+
+
+.foot__links li a:after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+
+.foot__links li a:hover:after {
+    width: 100%;
+}
+
+.foot__links li a#actif::after{
+    width: 100%;
+}

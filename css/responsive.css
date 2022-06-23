@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+/*Initialisation de la page*/
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+/*! Responsive Design */
+
+@media screen and (max-width: 1670px) {
+    .container-acc {
+        height: 3100px;
+    }
+}
+
+@media screen and (max-width: 1630px) {
+    .revend1 {
+        display: none;
+    }
+
+    .navbar .p-bateau {
+        display: none;
+    }
+
+    .revend2 {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .revend2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .constance img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1355px) {
+    .container-acc {
+        height: 3700px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul img {
+        display: inline;
+    }
+
+    .p-magasin {
+        display: none;
+    }
+
+    .p-magasin-banner {
+        position: absolute;
+        top: 100px;
+        left: -10;
+        display: inline;
+        z-index: -3;
+        width: 100%;
+    }
+
+    .constance img {
+        width: 100%;
+        height: auto;
+    }
+
+    .constance h4 {
+        top: 16%;
+        font-size: 20px;
+    }
+
+    .navbar .nav__links a .menu {
+        display: flex;
+    }
+
+    .title h2 {
+        top: 520px;
+    }
+
+    .title h4 {
+        top: 630px;
+    }
+
+    .btn-acc {
+        top: 820px;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    .container-acc {
+        height: 6000px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container-acc {
+        height: 2750px;
+    }
+
+    .grid-item, .grid-item img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .grid-item:nth-child(3) img {
+        top: -140px;
+    }
+
+    .grid-item:nth-child(5) img {
+        transform: scale(0.8);
+        left: -80px;
+        top: -160px;
+    }
+
+    .grid-item:nth-child(10) img {
+        transform: scale(0.8);
+        width: auto;
+        top: -200px;
+        left: -60px;
+    }
+
+    .grid-item:nth-child(12) img {
+        transform: scale(0.8);
+        top: -50px;
+        left: -60px;
+    }
+
+    .grid-item:nth-child(14) img {
+        transform: scale(0.7);
+        width: auto;
+        left: -68px;
+        top: -200px;
+    }
+
+    .grid-item:nth-child(15) img {
+        top: -180px;
+    }
+
+    .grille {
+        position: absolute;
+        max-width: 2000px;
+        width: 90%;
+        height: auto;
+        top: 1150px;
+        left: 7%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px); 
+        justify-content: center;
+        grid-gap: 10px;
+    }
+
+    .title h2 {
+        top: 400px;
+        font-size: 90px;
+    }
+
+    .title h4 {
+        top: 520px;
+        font-size: 20px;
+    }
+
+    .btn-acc {
+        transform: scale(0.8);
+        left: 20px;
+        top: 620px;
+    }
+
+    .galerie .text-gal h2 {
+        top: -250px;
+        font-size: 90px;
+    }
+
+    .constance h4 {
+        top: 12%;
+    }
+
+    .grid-gal {
+        top: -300px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .constance h4 {
+        top: 12%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .title h2 {
+        top: 320px;
+    }
+
+    .title h4 {
+        top: 440px;
+    }
+
+    .btn-acc {
+        top: 530px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .constance h4 {
+        top: 10%;
+    }
+
+    .btn-acc {
+        top: 520px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .title h2 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container-acc {
+        height: 1930px;
+    }
+
+    .container-mag {
+        height: 1550px;
+    }
+
+    .container-eng {
+        height: 1500px;
+    }
+
+    .title h4 {
+        font-size: 15px;
+        top: 320px;
+        width: 360px;
+        left: 20px;
+        text-align: center;
+    }
+
+    .container-mar {
+        height: 5150px;
+    }
+
+    .title h2 {
+        top: 200px;
+        left: 20px;
+    }
+
+    .btn-acc {
+        top: 430px;
+        left: 80px;
+    }
+
+    .galerie {
+        position: absolute;
+        top: -500px;
+    }
+
+    .galerie .text-gal h2 {
+        position: absolute;
+        font-size: 70px;
+        top: 0px;
+        left: 10px;
+    }
+
+    .grid-gal {
+        position: absolute;
+        left: 250px;
+        top: -90px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 3%;
+    }
+
+    footer li,  footer a {
+        font-size: 15px;
+    }
+
+    .foot__links li {
+        padding: 0px 5px;
+    }
+    
+    .foot__links li a {
+        padding: 0 5px;
+    }
+
+    .grid-item:hover {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        z-index: 2;
+    }
+
+    .grille {
+        display: grid;
+        width: 400px;
+        grid-template-columns: repeat(auto-fill, 120px);
+        grid-gap: 10px;
+        position: relative;
+        left: -245px;
+        top: 1200px;
+    }
+
+    .grid-item, .grid-item img {
+        height: 200px;
+        width: 120px;
+        margin: 10px auto;
+    }
+
+    .grid-item:nth-child(1) img,
+    .grid-item:nth-child(2) img,
+    .grid-item:nth-child(3) img,
+    .grid-item:nth-child(4) img,
+    .grid-item:nth-child(6) img,
+    .grid-item:nth-child(7) img,
+    .grid-item:nth-child(8) img,
+    .grid-item:nth-child(9) img,
+    .grid-item:nth-child(10) img,
+    .grid-item:nth-child(11) img,
+    .grid-item:nth-child(12) img,
+    .grid-item:nth-child(13) img,
+    .grid-item:nth-child(14) img,
+    .grid-item:nth-child(15) img,
+    .grid-item:nth-child(16) img {
+        top: 0px;
+    }
+
+    .grid-item:nth-child(1) img,
+    .grid-item:nth-child(2) img,
+    .grid-item:nth-child(3) img {
+        height: 100%;
+        width: 120%;
+        left: -5px;
+        top: -10px;
+    }
+
+    .grid-item:nth-child(4) img {
+        height: 100%;
+        width: 130%;
+        left: -20px;
+        top: -10px;
+    }
+
+    .grid-item:nth-child(5) img {
+        position: relative;
+        top: -200px;
+        left: -240px;
+        transform: scale(0.5);
+    }
+
+    .grid-item:nth-child(6) img {
+        transform: scale(0.6);
+        top: -250px;
+        left: -150px;
+    }
+
+    .grid-item:nth-child(7) img {
+        position: relative;
+        width: 280%;
+        height: 120%;
+        left: -100px;
+        top: -20px;
+    }
+
+    .grid-item:nth-child(8) img {
+        height: 100%;
+    }
+
+    .grid-item:nth-child(9) img {
+        position: relative;
+        width: 180%;
+        height: 100%;
+        left: -50px;
+        top: -10px;
+    }
+
+    .grid-item:nth-child(10) img {
+        height: 150%;
+        width: 140%;
+        left: -20px;
+        top: -80px;
+    }
+
+    .grid-item:nth-child(11) img {
+        height: 120%;
+        width: 100%;
+        top: -10px;
+    }
+
+    .grid-item:nth-child(12) img,
+    .grid-item:nth-child(13) img,
+    .grid-item:nth-child(14) img,
+    .grid-item:nth-child(15) img {
+        height: 140%;
+        width: 150%;
+        top: -50px;
+        left: -30px;
+    }
+
+    .grid-item:nth-child(6) {
+        display: none;
+    }
+
+    .constance img {
+        width: 100%;
+        height: auto;
+        top: 100px;
+    }
+
+    .constance h4 {
+        position: absolute;
+        top: 250px;
+        left: 10px;
+        width: 350px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .representantes h1 {
+        left: 20px;
+        top: 500px;
+        font-size: 50px;
+    }
+
+    .representantes h4 {
+        left: 20px;
+        top: 580px;
+        font-size: 15px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .representantes img {
+        left: 2%;
+        top: 700px;
+        width: 350px;
+    }
+
+    .coin-jeu h1 {
+        top: 950px;
+        font-size: 50px;
+        left: 20px;
+    }
+
+    .coin-jeu h4 {
+        top: 1040px;
+        left: 20px;
+        width: 350px;
+        text-align: center;
+        font-size: 15px;    
+    }
+
+    .coin-jeu img {
+        top: 1180px;
+        left: 20px;
+        width: 350px;
+        height: auto;
+    }
+
+    .error {
+        position: relative;
+        top: 160px;
+        left: 20px;
+        width: 350px;
+        color: #333;
+        font-size: 15px;
+    }
+    
+    .title-mar h2 {
+        font-size: 70px ;
+        top: 80px;
+        left: 20px;
+    }
+
+    .presentation-mar h4 {
+        font-size: 15px;
+        width: 360px;
+        text-align: center;
+        top: 220px;
+        left: 15px;
+    }
+
+    .grille-mar {
+        top: 300px;
+    }
+
+    .grille-mar {
+        grid-template-columns: repeat(auto-fill, 350px); 
+    }
+    
+    .grid-item-mar {
+        position: relative;
+        width: 350px;
+        height: 280px;
+        transition: 0.5s;
+        z-index: 1;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .text-eng {
+        top: 380px;
+        left: 10px;
+    }
+
+    .text-eng img {
+        width: 250px;
+        left: -30px;
+    }
+
+    .text-eng p {
+        font-size: 15px;
+        position: absolute;
+        top: -130px;
+    }
+
+    .text-eng p span {
+        font-size: 15px;
+    }
+    
+    .text-eng p span.vert {
+        font-size: 15px;
+    }
+
+    .pdf embed {
+        position: absolute;
+        left: -120px;
+        top: -80px;
+        width: 360px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-acc {
+        height: 2150px;
+    }
+
+    .container-mag {
+        height: 1550px;
+    }
+
+    .container-mar {
+        height: 5150px;
+    }
+
+    .container-con {
+        height: 900px;
+    }
+
+    .container-eng {
+        height: 1500px;
+    }
+
+    .title h2 {
+        position: absolute;
+        left: 10px;
+        width: 500px;
+        font-size: 70px;
+    }
+
+    .title h4 {
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+        left: 10px;
+    }
+
+    .title .presentation .p-magasin {
+        display: none;
+    }
+
+    .btn-acc {
+        transform: scale(0.8);
+        position: absolute;
+        top: 600px;
+        left: 80px;
+    }
+
+    .galerie {
+        position: absolute;
+        top: -300px;
+    }
+
+    .galerie .text-gal h2 {
+        position: absolute;
+        font-size: 70px;
+        top: 0px;
+        left: 10px;
+    }
+
+    .grid-gal {
+        position: absolute;
+        left: 240px;
+        top: -90px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 3%;
+    }
+
+    footer li,  footer a {
+        font-size: 15px;
+    }
+
+    .foot__links li {
+        padding: 0px 5px;
+    }
+    
+    .foot__links li a {
+        padding: 0 5px;
+    }
+
+    .constance img {
+        width: 100%;
+        height: auto;
+        top: 100px;
+    }
+
+    .constance h4 {
+        position: absolute;
+        top: 250px;
+        left: 10px;
+        width: 350px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .representantes h1 {
+        left: 20px;
+        top: 500px;
+        font-size: 50px;
+    }
+
+    .representantes h4 {
+        left: 20px;
+        top: 580px;
+        font-size: 15px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .representantes img {
+        left: 2%;
+        top: 700px;
+        width: 350px;
+    }
+
+    .coin-jeu h1 {
+        top: 950px;
+        font-size: 50px;
+        left: 20px;
+    }
+
+    .coin-jeu h4 {
+        top: 1040px;
+        left: 20px;
+        width: 350px;
+        text-align: center;
+        font-size: 15px;    
+    }
+
+    .coin-jeu img {
+        top: 1180px;
+        left: 20px;
+        width: 350px;
+        height: auto;
+    }
+
+    .error {
+        position: relative;
+        top: 160px;
+        left: 20px;
+        width: 350px;
+        color: #333;
+        font-size: 15px;
+    }
+    
+    .title-mar h2 {
+        font-size: 70px ;
+        top: 80px;
+        left: 20px;
+    }
+
+    .presentation-mar h4 {
+        font-size: 15px;
+        width: 360px;
+        text-align: center;
+        top: 220px;
+        left: 15px;
+    }
+
+    .grille-mar {
+        top: 300px;
+    }
+
+    .grille-mar {
+        grid-template-columns: repeat(auto-fill, 350px); 
+    }
+    
+    .grid-item-mar {
+        position: relative;
+        width: 350px;
+        height: 280px;
+        transition: 0.5s;
+        z-index: 1;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .situer h2 {
+        font-size: 70px;
+        left: 20px;
+    }
+
+    .situer iframe {
+        width: 370px;
+        height: 200px;
+        left: 10px;
+        top: 200px;
+    }
+
+    .horraire-contact {
+        left: 10px;
+        top: 420px;
+        height: auto;
+    }
+
+    .horraire h3 {
+        font-size: 25px;
+    }
+
+    .horraire .jour {
+        font-size: 15px;
+        top: 35px;
+    }
+
+    .contact {
+        top: 100px;
+    }
+
+    .contact h3 {
+        font-size: 25px;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .contact-info svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-info a {
+        font-size: 20px;
+    }
+
+    .contact-info img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-info .mail a {
+        font-size: 15px;
+    }
+
+    .text-eng {
+        top: 380px;
+        left: 10px;
+    }
+
+    .text-eng img {
+        width: 250px;
+        left: -30px;
+    }
+
+    .text-eng p {
+        font-size: 15px;
+        position: absolute;
+        top: -130px;
+    }
+
+    .text-eng p span {
+        font-size: 15px;
+    }
+    
+    .text-eng p span.vert {
+        font-size: 15px;
+    }
+
+    .pdf embed {
+        position: absolute;
+        left: -80px;
+        top: -80px;
+        width: 300px;
+        height: 600px;
+    }
+}
